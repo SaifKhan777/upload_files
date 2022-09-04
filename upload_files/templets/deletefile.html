@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Add file{% endblock title %}
+
+{% block body %}
+<div class="container mb-3 py-4">
+    <h1 class="text-center">DELETE File</h1>
+    <form method="POST" action="deletefile" enctype="multipart/form-data">
+    {% csrf_token %}
+        <div class="form-group">
+            <label for="username">USER NAME</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Enter yout name">
+        </div>
+        
+        <div class="form-group">
+            <label for="filename">FILE NAME</label>
+            <input type="text" class="form-control" id="filename" name="filename" placeholder="Give file name">
+        </div>
+
+        <button class="btn btn-primary" type="submit">Delete</button>
+    </form>
+</div>
+{% endblock %}
+

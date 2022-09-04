@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block body%}
+
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">username</th>
+        <th scope="col">Filename</th>
+        <th scope="col">File</th>
+        <th scope="col">upload date</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for list in list %}
+      <tr>
+        <td> {{ list.username}} </td>
+        <td>{{ list.filename}}</td>
+        <td>
+            <a href="{{ list.addedfiles.url}}" download="{{ list.addedfiles.url}}">
+        
+        {{ list.addedfiles}}
+            </a>
+
+        </td> 
+        <td>{{ list.date}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endblock %}
