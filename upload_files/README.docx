@@ -1,0 +1,33 @@
+-----I am very thankful for this wonderful oppurtunity----
+
+I have built a simple and light uploading file management system that has easy to understand front_end and easy to devolop back_end. 
+
+The user can addfiles , give file name , filetype and upload a file
+
+A dashboard provides a list of all the uploaded files that can also be downloaded
+
+
+----INSTALATION----
+
+- Download the free to access github files
+
+-Go to terminal and type :- python manage.py runserver
+    http://127.0.0.1:8000/ to check if connected
+   (if you run into some problum please try :- python manage.py  makemigrations  
+      and   python manage.py migrate)
+
+-To view admin site :- http://127.0.0.1:8000/admin
+
+-you can login using
+     username : saifulla
+     password : khan
+
+or
+
+     username : saif
+     password : saifkhan
+
+
+- now you have all the access to the project
+--------------------------------------------------------------------------------------------------------------------------------------------
+
